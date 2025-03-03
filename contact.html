@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" type="image/jpeg" href="LOGO.jpg">
+<style>
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #626F47;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            height: 50px;
+            border-radius: 50%; /* Make the logo circular */
+            object-fit: cover;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            font-family: 'Great Vibes', cursive;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+
+        nav a:hover {
+            color: #FBFFE4 !important;
+            text-decoration: underline;
+        }
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 1000px;
+    }
+    .form-container, .info-container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 300px;
+    }
+    .image-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .image-gallery img {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    section {
+        background-color: #626F47;
+        height: 680px;
+    }
+    footer {
+        height: 90px;
+        width: fit-content;
+        border-color: burlywood;
+        border-radius: 30px;
+        margin: auto;
+    }
+    body{
+        background-color: blanchedalmond;
+    }
+    h1 {
+        color: white;
+    }
+    .questions{
+        color: white;
+    }
+</style>
+<body>
+    <header>
+        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Pawslogo.jpg" alt="PAWS Logo"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://www.google.com/maps?q=Philippine+Animal+Welfare+Society,+Marikina" target="_blank">Location</a></li>
+                <li><a href="donate.html">Donate</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+        </nav>
+    </header>
+<section class="contact-us py-12 px-6 max-w-4xl mx-auto bg-gray-100 rounded-xl shadow-lg">
+    <h1 class="text-4xl font-semibold text-gray-800 mb-6">Contact Us</h1>
+    <p class="questions">Have questions? Reach out to us, and we’ll get back to you as soon as possible.</p>
+    
+    <div class="contact-container">
+        <div class="form-container">
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 p-3 w-full border rounded-lg focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 p-3 w-full border rounded-lg focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 p-3 w-full border rounded-lg focus:ring-2 focus:ring-blue-500" required></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">Send Message</button>
+            </form>
+        </div>
+        
+        <div class="info-container text-gray-700">
+            <p>Or reach us directly at <a href="mailto:your-email@example.com" class="text-blue-600 underline">lmpolicarpio@maristschool.edu.ph</a></p>
+            <p>Phone: <span class="font-semibold">(09) 960-269-4431</span></p>
+            <p>Address: <span class="font-semibold">83 Champagnat St, Marikina, 1810 Metro Manila</span></p>
+        </div>
+    </div>
+</section>
+</body>
+<footer>
+    <p>@Marist School Marakina (2024-2025)</p>
+</footer>
+</head>
+</html>
